@@ -8,29 +8,68 @@
 </head>
 <body>
     <h1>HTML Forms</h1>
-    <div>
-        <form>
-            <label for="username">Enter username:</label>
-            <input type="text" name="" id="username">
-            <br><br>
-            <label type="email">Enter email:</label>
-            <input type="email" name="" id="email">
-            <br><br>
-            <label for="password">Enter password:</label>
-            <input type="password" name="" id="password">
-        </form>
-    </div>
+    <form>
+        <label for="username">Enter username:</label>
+        <input type="text" name="" id="username" placeholder="username" required>
+        <br><br>
+        <label type="email">Enter email:</label>
+        <input type="email" name="" id="email" placeholder="email">
+        <br><br>
+        <label for="password">Enter password:</label>
+        <input type="password" name="" id="password" placeholder="password">
+        <br><br>
+        <input type="submit" value="Submit Form">
+    </form>
+
     <br>
     <hr>
-    <div>
-        <form>
-            <input type="radio" name="gender" value="male"> Male
-            <br>
-            <input type="radio" name="gender" value="female"> Female
-            <br>
-            <input type="radio" name="gender" value="other"> Other
-        </form>
-        <p><b>Note:</b> When a user clicks on a radio button, it becomes checked, and all other radio-buttons with equal name attribute become unchecked.</p>
-    </div>
 
+    <form>
+        <input type="radio" name="gender" value="male"> Male
+        <br>
+        <input type="radio" name="gender" value="female"> Female
+        <br>
+        <input type="radio" name="gender" value="other"> Other
+    
+        <p><b>Note:</b> When a user clicks on a radio button, it becomes checked, and all other radio-buttons with equal name attribute become unchecked.</p>
+    </form>
+
+    <br>
+    <hr>
+
+    <form>
+        <p>Select your age:</p>
+        <input type="radio" name="age" id="option-1" value="0-25">
+        <label for="option-1">0-25</label>
+        <input type="radio" name="age" id="option-2" value="26-50">
+        <label for="option-2">26-50</label>
+        <input type="radio" name="age" id="option-3" value="50+">
+        <label for="option-3">50+</label>
+    </form>
+
+    <br>
+    <hr>
+
+    <form>
+        <!-- use a select tag to create a dropdown box. This is an exception to <form> where we use a different tag other than <input> -->       
+        <label for="question">Security question:</label>
+        <select name="question" id="question">
+            <option value="q1">What is your mother's maiden name?</option>
+            <option value="q2">What is the name of your first pet?</option>
+            <option value="q3">What is the name of the high school you attended?</option>
+        </select>
+        <br><br>
+        <label for="answer">Security question answer:</label>
+        <input type="text" name="answer" id="answer">
+    </form>
+
+    <br>
+    <hr>
+    
+    <!-- tetarea form is used for comments or biography that require alot of text. This is an exception to <form> where we use a different tag other than <input> -->
+    <form action="">
+        <label for="bio">Your bio:</label><br>
+        <textarea name="bio" id="bio" cols="30" rows="10" placeholder="about you..."></textarea>
+        <br>
+    </form>
 </body>
