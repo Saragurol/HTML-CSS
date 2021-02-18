@@ -5,12 +5,27 @@ h1{
     text-align:center;
     text-shadow: 2px 2px #e9e9e9;
 }
-p{
+.define{
     color:slategray;
     text-align: right;
     line-height:30px;
     column-count: 2;
     column-gap: 60px;
+}
+p.error{
+    color:red;
+}
+p.success{
+    color:#4fdb4f;
+}
+p.success.feedback{
+    border:4px dashed #4fdb4f;
+}
+div .another-ex{
+    background-color: rgb(249, 152, 141);
+}
+div.another-ex{
+    background-color: rgb(166, 154, 244);
 }
 ul{
     border: 4px solid crimson;   
@@ -18,6 +33,15 @@ ul{
 li{
     list-style-type:none;
 }
+a[href]{
+    background-color: orange;
+    font-weight: bold;
+    color:snow;
+}
+a[href="https://www.w3schools.com/css/"]{
+    background-color:rgb(48, 211, 195);
+}
+
 /* hex codes
 # followed by 6 digits
 numbers 0-9
