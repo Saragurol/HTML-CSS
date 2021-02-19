@@ -1,0 +1,42 @@
+header{
+    background-color: #F63232;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1;
+}
+header h1{
+    color:white;
+    border:8px solid white;
+    display: inline-block;
+    padding:6px 12px;
+    border-radius: 36px;
+
+}
+/* setting banner to relative so we can set a child element to absolute  */
+.banner{
+    position: relative;
+}
+/* max-width sets the img's width to 100% of its parent  */
+.banner img{
+    max-width:100%;
+}
+/* setting an element's postion to absolute takes that element out of normal document flow. This causes the subsequent elements in the document flow to move up because the space is lost  */
+.banner .welcome{
+    position: absolute;
+    background-color: #FEB614;
+    padding:30px;
+    color:white;
+    left:0;
+    top:30%;
+}
+.banner h2{
+    font-size: 74px;
+}
+/* em takes the value of the element's parent and multiplys it by a number */
+.banner h2 span{
+    font-size:1.3em;
+}
