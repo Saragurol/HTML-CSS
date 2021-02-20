@@ -37,7 +37,7 @@ header h1 {
   transform: translate(0%, -50%);
 }
 .banner h2 {
-  font-size: 64px;
+  font-size: 54px;
 }
 /* em takes the value of the element's parent and multiplys it by a number */
 .banner h2 span {
@@ -125,13 +125,30 @@ form input:valid {
 
 /* responsive styles */
 @media screen and (max-width: 1400px) {
-  .banner .welcome {
-    position: absolute;
-    background-color: #feb614;
-    padding: 0 20px;
-    color: white;
-    top: 50%;
-    left: 0%;
-    transform: translate(0%, -50%);
+  .banner h2{
+    font-size:30px
   }
 }
+
+@media screen and (max-width: 940px) {
+  .banner h2{
+    font-size:30px
+  }
+}
+/* @media screen and (max-width: 760px) {
+  .banner .welcome{
+    position: relative;
+    text-align: center;
+    padding:5px;
+  }
+  .banner .welcome br{
+    display: none;
+  }
+  .banner .welcome h2{
+    font-size: 25px;
+  }
+  .banner .welcome span{
+    font-size:1em;
+  }
+} */
+ 
